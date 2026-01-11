@@ -70,7 +70,7 @@ main {
 .site-footer {
 	background: #fff;
 	border-top: 1px solid rgba(0, 0, 0, 0.05);
-	margin-top: 80px;
+	margin-top: 40px;
 }
 
 .footer__content {
@@ -104,11 +104,28 @@ section {
 	margin-bottom: 120px;
 }
 
+section:last-of-type {
+	margin-bottom: 40px;
+}
+
 .grid {
 	display: grid;
 	grid-template-columns: repeat(2, minmax(0, 1fr));
 	gap: 60px;
 	align-items: center;
+}
+
+.hero__logo-wrapper {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+
+.hero__logo {
+	width: clamp(260px, 55vw, 560px);
+	height: auto;
+	display: block;
+	filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.15));
 }
 
 .hero__eyebrow {
@@ -232,10 +249,23 @@ h1 {
 	box-shadow: none;
 }
 
+.services--hero {
+	margin: 20px 0 40px;
+	padding: 0 0 24px;
+}
+
+.services--hero .services__grid {
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .services__header {
 	margin: 0 0 40px;
 	padding-left: 6px;
 	text-align: left;
+}
+
+.services--hero .services__header {
+	text-align: center;
 }
 
 .services__kicker {
@@ -298,7 +328,15 @@ h1 {
 		grid-template-columns: 1fr;
 	}
 
+	.hero .grid > div:first-child {
+		margin-bottom: 32px;
+	}
+
 	.services__grid {
+		grid-template-columns: 1fr;
+	}
+
+	.services--hero .services__grid {
 		grid-template-columns: 1fr;
 	}
 
