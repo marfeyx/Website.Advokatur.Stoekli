@@ -497,6 +497,10 @@ h1 {
 		grid-template-columns: 1fr;
 	}
 
+	.hero__logo {
+		width: clamp(240px, 60vw, 480px);
+	}
+
 	.hero .grid > div:first-child {
 		margin-bottom: 32px;
 	}
