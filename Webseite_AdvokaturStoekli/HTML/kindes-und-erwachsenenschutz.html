@@ -7,24 +7,29 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../CSS/index.css">
+	<link rel="stylesheet" href="../CSS/kue.css">
 </head>
-<body>
 	<header>
 		<nav class="nav" aria-label="Hauptnavigation">
-			<div class="nav__brand">ADVOKATUR STÖCKLI</div>
-			<ul class="nav__links">
-				<li><a href="index.html">Home</a></li>
+			<a class="nav__brand" href="index.html">ADVOKATUR STÖCKLI</a>
+			<button class="nav__toggle" type="button" aria-label="Menü umschalten" aria-controls="nav-links" aria-expanded="false">
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+			</button>
+			<ul class="nav__links" id="nav-links">
 				<li><a href="ueber-uns.html">Über uns</a></li>
-				<li><a href="trennung-und-eheschutz.html">Trennung & Eheschutz</a></li>
+				<li><a href="trennung-und-eheschutz.html">Trennung &amp; Eheschutz</a></li>
 				<li><a href="scheidung.html">Scheidung</a></li>
-				<li><a href="obhut-und-sorgerecht.html">Obhut & Sorgerecht</a></li>
+				<li><a href="obhut-und-sorgerecht.html">Obhut &amp; Sorgerecht</a></li>
+				<li><a href="kindes-und-erwachsenenschutz.html">Kindes &amp; Erwachsenenschutz</a></li>
 				<li><a href="kontakt.html">Kontakt</a></li>
 			</ul>
 		</nav>
 	</header>
 
-
+	<main>
+	</main>
     
 	<footer class="site-footer">
 		<div class="footer__content">
@@ -37,5 +42,6 @@
 			</nav>
 		</div>
 	</footer>
+	<script src="../JS/headerscript.js"></script>
 </body>
 </html>
