@@ -14,7 +14,12 @@
 	<header>
 		<nav class="nav" aria-label="Hauptnavigation">
 			<a class="nav__brand" href="index.html">ADVOKATUR STÖCKLI</a>
-			<ul class="nav__links">
+			<button class="nav__toggle" type="button" aria-label="Menü umschalten" aria-controls="nav-links" aria-expanded="false">
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+			</button>
+			<ul class="nav__links" id="nav-links">
 				<li><a href="ueber-uns.html">Über uns</a></li>
 				<li><a href="trennung-und-eheschutz.html">Trennung & Eheschutz</a></li>
 				<li><a href="scheidung.html">Scheidung</a></li>
@@ -34,51 +39,44 @@
 				<div class="services__grid">
 					<article class="services__item">
 						<div class="services__icon" aria-hidden="true">
-							<span class="asterisk asterisk--small"></span>
 						</div>
 						<h3 class="services__headline">Scheidung</h3>
 						<p class="services__body">Ich begleite Sie verlässlich durch einvernehmliche und strittige Scheidungsverfahren. Dazu gehören insbesondere Fragen der elterlichen Sorge, der Obhut, des Besuchsrechts sowie Fragen zum Unterhalt und der güterrechtlichen Auseinandersetzung.</p>
 					</article>
 					<article class="services__item">
 						<div class="services__icon" aria-hidden="true">
-							<span class="asterisk asterisk--small"></span>
 						</div>
 						<h3 class="services__headline">Trennung &amp; Eheschutz</h3>
 						<p class="services__body">Bei Trennung und im Rahmen von Eheschutzverfahren berate und vertrete ich Sie bei der Regelung der Zuteilung der ehelichen Wohnung, Fragen der Obhut sowie des Besuchsrechts im Zusammenhang mit Kindern sowie Unterhaltsfragen.</p>
 					</article>
 					<article class="services__item">
 						<div class="services__icon" aria-hidden="true">
-							<span class="asterisk asterisk--small"></span>
 						</div>
 						<h3 class="services__headline">Obhut &amp; Sorgerecht</h3>
 						<p class="services__body">Fragen zur Obhut und zur elterlichen Sorge betreffen das Wohl der Kinder in besonderem Mass. Ich berate Sie umfassend zu den rechtlichen Grundlagen und unterstütze Sie bei der Ausarbeitung kindswohlgerechter Lösungen.</p>
 					</article>
 					<article class="services__item">
 						<div class="services__icon" aria-hidden="true">
-							<span class="asterisk asterisk--small"></span>
 						</div>
 						<h3 class="services__headline">Kindes- &amp; Erwachsenenschutz</h3>
 						<p class="services__body">Fragen zur Obhut und zur elterlichen Sorge betreffen das Wohl der Kinder in besonderem Mass. Ich berate Sie umfassend zu den rechtlichen Grundlagen und unterstütze Sie bei der Ausarbeitung kindswohlgerechter Lösungen.</p>
 					</article>
 					<article class="services__item">
 						<div class="services__icon" aria-hidden="true">
-							<span class="asterisk asterisk--small"></span>
 						</div>
 						<h3 class="services__headline">Persönliche Beratung</h3>
 						<p class="services__body">Familiäre Konflikte erfordern neben juristischer Fachkenntnis auch ein hohes Mass an Sensibilität und Verlässlichkeit. Ich lege grossen Wert auf eine persönliche Beratung und transparente Kommunikation.</p>
 					</article>
 					<article class="services__item">
 						<div class="services__icon" aria-hidden="true">
-							<span class="asterisk asterisk--small"></span>
 						</div>
 						<h3 class="services__headline">Region</h3>
 						<p class="services__body">Die Kanzlei betreut Mandate aus dem ganzen Kanton Aargau, insbesondere im Raum Aarau, Lenzburg, Zofingen sowie dem Bezirk Kulm. Ausserkantonale Mandate übernehme ich gerne nach Absprache.</p>
 					</article>
 				</div>
 			</section>
-			<div class="grid">
+			<div class="grid grid--tight">
 				<div>
-					<div class="asterisk asterisk--block" aria-hidden="true"></div>
 					<ul class="checklist" aria-label="Leistungsübersicht">
 						<li>
 							<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -114,7 +112,6 @@
 				<div>
 					<div class="section-eyebrow">
 					</div>
-					<div class="asterisk asterisk--block" aria-hidden="true"></div>
 					<ul class="checklist" aria-label="Beratungsschwerpunkte">
 						<li>
 							<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -139,6 +136,19 @@
 			</div>
 		</section>
 
+		<section class="signature-banner" aria-labelledby="signature-title">
+			<div class="signature-banner__content">
+				<p class="signature-banner__quote" id="signature-title">"Meine Tätigkeit ist geprägt von fachlicher Klarheit, Augenmass und dem Ziel tragfähige und praktikable Lösungen zu erarbeiten. Dabei stehen die individuellen Bedürfnisse meiner Klientinnen und Klienten sowie - wo Kinder betroffen sind - das Kindeswohl im Zentrum."</p>
+				<div class="signature-banner__persona">
+					<div class="signature-banner__photo-ring">
+						<img class="signature-banner__photo" src="../ASSETS/Main_Image.jpg" alt="Portrait von Anna Lena Stöckli" loading="lazy">
+					</div>
+					<p class="signature-banner__name">Anna Lena Stöckli</p>
+					<p class="signature-banner__role">Rechtsanwältin MLaw</p>
+				</div>
+			</div>
+		</section>
+
 	</main>
 
 	<footer class="site-footer">
@@ -152,5 +162,28 @@
 			</nav>
 		</div>
 	</footer>
+	<script>
+		(function () {
+			const nav = document.querySelector('.nav');
+			const toggle = document.querySelector('.nav__toggle');
+			const navLinks = document.getElementById('nav-links');
+			if (!nav || !toggle || !navLinks) {
+				return;
+			}
+			nav.classList.add('supports-toggle');
+			toggle.addEventListener('click', function () {
+				const expanded = toggle.getAttribute('aria-expanded') === 'true';
+				const nextState = !expanded;
+				toggle.setAttribute('aria-expanded', String(nextState));
+				nav.classList.toggle('is-open', nextState);
+			});
+			navLinks.querySelectorAll('a').forEach(function (link) {
+				link.addEventListener('click', function () {
+					toggle.setAttribute('aria-expanded', 'false');
+					nav.classList.remove('is-open');
+				});
+			});
+		})();
+	</script>
 </body>
 </html>

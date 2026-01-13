@@ -1,7 +1,10 @@
 /// DOKU ///
 
-Sonntag     11.01.2025      -> 2 Stunden
+Sonntag     11.01.2026      -> 2 Stunden
 Index, Aufsetzen, Header, Footer
 
-Montag      12.01.2025      -> 15 Minuten
+Montag      12.01.2026      -> 15 Minuten
 Index Overwork
+
+Dienstag    13.01.2026      -> 40 Minuten
+Header Burger Menu, Sterne, Schwarzes Banner
