@@ -9,6 +9,6 @@ Index Overwork
 Dienstag    13.01.2026      -> 1 Stunde 15 Minuten
 Header Burger Menu, Sterne, Schwarzes Banner
 
-Donnerstag  15.01.2026      -> 2 Stunden
+Donnerstag  15.01.2026      -> 3 Stunden
 OUS, KUE, Kontakt, Scheidung und Über Uns
 
