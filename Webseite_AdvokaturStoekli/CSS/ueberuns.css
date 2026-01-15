@@ -399,6 +399,152 @@ h1 {
 	padding: 0 0 24px;
 }
 
+/* Über uns – ruhiges Einspalter-Layout */
+.about-body {
+	background: #ffffff;
+	color: #111111;
+}
+
+.about-body main {
+	max-width: 640px;
+	margin: 0 auto;
+	padding: 140px 32px 160px;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+.about-layout {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0;
+}
+
+.about-header {
+	text-align: center;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+	margin-bottom: 88px;
+}
+
+.about-header__asterisk {
+	display: inline-block;
+	font-family: 'Playfair Display', 'Times New Roman', serif;
+	font-size: 1.2rem;
+	margin-bottom: 24px;
+}
+
+.about-header__name {
+	font-family: 'Playfair Display', 'Times New Roman', serif;
+	font-size: 1.6rem;
+	letter-spacing: 0.05rem;
+	margin: 0 0 8px;
+}
+
+.about-header__role {
+	font-size: 0.85rem;
+	letter-spacing: 0.35rem;
+	margin: 0;
+}
+
+.about-portrait {
+	margin: 0 0 48px;
+	width: 100%;
+	text-align: center;
+}
+
+.about-portrait img {
+	width: min(100%, 420px);
+	aspect-ratio: 3 / 4;
+	object-fit: cover;
+	display: block;
+	margin: 0 auto;
+	border-radius: 18px;
+	box-shadow: 0 24px 60px rgba(0, 0, 0, 0.08);
+	background: #f3f3f3;
+}
+
+.about-portrait figcaption {
+	margin-top: 20px;
+	font-size: 0.78rem;
+	letter-spacing: 0.26rem;
+	text-transform: uppercase;
+	color: #4c4c4c;
+}
+
+.about-text-block {
+	text-align: left;
+	width: 100%;
+	font-size: 1rem;
+	line-height: 1.8;
+}
+
+.about-text-block p {
+	margin: 0 0 24px;
+}
+
+.about-section-heading {
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 0.95rem;
+	letter-spacing: 0.4rem;
+	text-transform: uppercase;
+	margin: 64px 0 24px;
+	color: #1c1c1c;
+}
+
+.about-focus-list {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 40px;
+}
+
+.about-focus-list li {
+	position: relative;
+	padding-left: 24px;
+	margin-bottom: 12px;
+	font-size: 0.95rem;
+	letter-spacing: 0.05rem;
+}
+
+.about-focus-list li::before {
+	content: "-";
+	position: absolute;
+	left: 0;
+	color: #1a1a1a;
+	font-weight: 600;
+}
+
+@media (max-width: 640px) {
+	.about-body main {
+		padding: 96px 20px 120px;
+	}
+
+	.about-header {
+		letter-spacing: 0.16rem;
+	}
+
+	.about-header__role {
+		letter-spacing: 0.24rem;
+	}
+
+	.about-portrait figcaption {
+		letter-spacing: 0.18rem;
+	}
+
+	.about-section-heading {
+		letter-spacing: 0.32rem;
+	}
+}
+
 .services--hero .services__grid {
 	grid-template-columns: repeat(3, minmax(0, 1fr));
 }

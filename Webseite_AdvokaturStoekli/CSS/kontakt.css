@@ -399,6 +399,82 @@ h1 {
 	padding: 0 0 24px;
 }
 
+/* Kontakt – minimalistisches Layout */
+.contact-page-body {
+	background: #ffffff;
+	color: #111111;
+}
+
+.contact-page-body main {
+	max-width: 640px;
+	margin: 0 auto;
+	padding: 140px 40px 160px;
+}
+
+.contact-layout {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.contact-layout__symbol {
+	font-family: 'Playfair Display', 'Times New Roman', serif;
+	font-size: 1rem;
+	color: #7d7d7d;
+	margin-bottom: 36px;
+}
+
+.contact-layout__title {
+	font-family: 'Playfair Display', 'Times New Roman', serif;
+	font-size: 2.2rem;
+	letter-spacing: 0.04rem;
+	color: #111111;
+	margin: 0 0 48px;
+	line-height: 1.25;
+}
+
+.contact-layout__text {
+	width: 100%;
+	max-width: 620px;
+	text-align: left;
+	font-size: 1rem;
+	line-height: 1.7;
+	color: #2b2b2b;
+}
+
+.contact-layout__text p {
+	margin: 0 0 20px;
+}
+
+.contact-layout__text p:last-child {
+	margin-bottom: 0;
+}
+
+.contact-layout__line {
+	text-transform: uppercase;
+	letter-spacing: 0.18rem;
+	font-size: 0.8rem;
+	color: #1d1d1d;
+	margin-top: 32px;
+	text-align: center;
+}
+
+@media (max-width: 720px) {
+	.contact-page-body main {
+		padding: 110px 24px 120px;
+	}
+
+	.contact-layout__title {
+		font-size: 1.9rem;
+	}
+
+	.contact-layout__line {
+		letter-spacing: 0.12rem;
+		font-size: 0.78rem;
+	}
+}
+
 .services--hero .services__grid {
 	grid-template-columns: repeat(3, minmax(0, 1fr));
 }
