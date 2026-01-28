@@ -11,10 +11,3 @@ Header Burger Menu, Sterne, Schwarzes Banner
 
 Donnerstag  15.01.2026      -> 3 Stunden 20 Minuten
 OUS, KUE, Kontakt, Scheidung und Über Uns
-
-
-///
-
-TASKS: Sort CSS, Remove Unnecessary CSS, Finalize HTML.
-
-Additional: Manifest, PWA, Caching.
