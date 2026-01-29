@@ -3,19 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!DOCTYPE html>
-	<html lang="de">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Kontaktieren Sie die Advokatur Stöckli in Buchs AG. Zentrale Lage nahe Aarau, Lenzburg, Zofingen und Kulm – kostenlose Parkplätze vor dem Haus.">
-		<title>Kontakt &amp; Anfahrt – Advokatur Stöckli Buchs AG</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="../CSS/kontakt.css">
-	</head>
-	<body class="contact-page-body">
+	<meta name="description" content="Kontaktieren Sie die Advokatur Stöckli in Buchs AG. Zentrale Lage nahe Aarau, Lenzburg, Zofingen und Kulm – kostenlose Parkplätze vor dem Haus.">
+	<title>Kontakt &amp; Anfahrt – Advokatur Stöckli Buchs AG</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+	<link
+		rel="stylesheet"
+		href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+	/>
+	<link rel="stylesheet" href="../CSS/kontakt.css">
+</head>
+<body class="contact-page-body">
 		<header>
 			<nav class="nav" aria-label="Hauptnavigation">
 				<a class="nav__brand" href="index.html">ADVOKATUR STÖCKLI</a>
@@ -38,13 +37,16 @@
 		<main class="contact-layout" aria-labelledby="contact-heading">
 			<span class="contact-layout__symbol" aria-hidden="true">*</span>
 			<h1 id="contact-heading" class="contact-layout__title">
-				Kontakt Advokatur Stöckli Buchs AG
+				Kontakt Advokatur Stöckli
 			</h1>
 			<section class="contact-layout__text" aria-label="Kontaktinformationen">
-				<p>Gerne berate ich Sie persönlich in meiner Kanzlei in Buchs AG. Für eine Terminvereinbarung kontaktieren Sie mich vorzugsweise per E-Mail mail(at)Mailadresse.ch. Telefonisch bin ich unter 062 380 62 00 erreichbar.</p>
+				<p>Gerne berate ich Sie persönlich in meiner Kanzlei in Buchs AG. Für eine Terminvereinbarung kontaktieren Sie mich vorzugsweise per E-Mail <a href="mailto:info@advokaturstoekli.ch">info@advokaturstoekli.ch</a>. Telefonisch bin ich unter 062 380 62 00 erreichbar.</p>
 				<p>Die Kanzlei befindet sich in Buchs AG und ist gut erreichbar aus Aarau, Lenzburg, Zofingen sowie dem Bezirk Kulm.</p>
 				<p>Kostenlose Parkplätze stehen direkt vor dem Haus zur Verfügung.</p>
-				<p class="contact-layout__line">Telefon 062 380 62 00 <br> <a href="mailto:kontakt@advokatur-stoeckli.ch">kontakt@advokatur-stoeckli.ch</a> <br> Fabrikweg 93, 5033 Buchs AG</p>
+				<p class="contact-layout__line">Telefon 062 380 62 00 <br> <a href="mailto:info@advokaturstoekli.ch">info@advokaturstoekli.ch</a> <br> Advokatur Stöckli Fabrikweg 93, 5033 Buchs AG</p>
+			</section>
+			<section class="contact-map" aria-label="Karte zum Standort Fabrikweg 93, 5033 Buchs AG, Schweiz">
+				<div id="contact-map" class="contact-map__frame" aria-hidden="true"></div>
 			</section>
 		</main>
 
@@ -59,6 +61,31 @@
 				</nav>
 			</div>
 		</footer>
+		<script
+			src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+		></script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				const mapContainer = document.getElementById('contact-map');
+				if (!mapContainer) return;
+
+				const map = L.map(mapContainer, {
+					scrollWheelZoom: false
+				}).setView([47.3865639, 8.0819667], 17);
+
+				L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+					maxZoom: 19,
+					attribution: '&copy; OpenStreetMap-Mitwirkende'
+				}).addTo(map);
+
+				L.marker([47.3865639, 8.0819667])
+					.addTo(map)
+					.bindPopup('Advokatur Stöckli<br>Fabrikweg 93, 5033 Buchs AG')
+					.openPopup();
+
+				requestAnimationFrame(() => map.invalidateSize());
+			});
+		</script>
 		<script src="../JS/headerscript.js"></script>
 	</body>
 	</html>
