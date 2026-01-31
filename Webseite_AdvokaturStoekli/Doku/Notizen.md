@@ -29,13 +29,6 @@ Qualifikation - Juristische Assistentin
 __HIER_FOLGT__ BERUFLICHER WERDEGANG
 
 
-
-KONTAKT
-
-Adresse grösser
-
-
-
 EMAILS:
 
 OFFIZIEL - info@advokaturstoekli.ch

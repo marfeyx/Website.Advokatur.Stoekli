@@ -14,3 +14,6 @@ OUS, KUE, Kontakt, Scheidung und Über Uns
 
 Donnerstag 29.01.2026       -> 1 Stunde 15 Minuten
 Leaflet Map, Textkorrekturen, Konsulation
+
+Samstag 31.01.2026          -> 50 Minuten
+Über Uns, SEO Tests
