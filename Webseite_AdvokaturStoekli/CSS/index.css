@@ -569,11 +569,17 @@ h1 {
 		padding: 16px 20px;
 	}
 
+	.nav__brand {
+		min-width: 0;
+		max-width: calc(100% - 64px);
+	}
+
 	.nav__toggle {
 		display: inline-flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		flex-shrink: 0;
 	}
 
 	.nav__links {
