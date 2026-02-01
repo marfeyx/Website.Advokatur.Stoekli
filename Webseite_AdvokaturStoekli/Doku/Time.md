@@ -18,5 +18,7 @@ Leaflet Map, Textkorrekturen, Konsulation
 Samstag 31.01.2026          -> 50 Minuten
 Über Uns, SEO Tests
 
-Sonntag 01.02.2026          -> 15 Minuten
-Map, Emails, Small changes
+Sonntag 01.02.2026          -> 60 Minuten
+Map, Emails, Small changes.
+Fixxed Footer and Texts.
+Changed Datenschutz text.
