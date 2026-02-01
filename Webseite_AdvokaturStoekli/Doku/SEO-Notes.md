@@ -5,7 +5,7 @@ Scheidung                   | Mobile and Desktop    | Perfect
 Impressum                   | Mobile and Desktop    | Perfect
 
 
-ISSUES: 
+Not 100/100/100: 
 
 Trennung und Eheschutz      | Mobile                | Performance
 Index                       | Mobile and Desktop    | Performance

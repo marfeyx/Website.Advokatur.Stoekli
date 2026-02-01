@@ -460,6 +460,10 @@ h1 {
 	text-align: center;
 }
 
+.contact-layout__phone {
+	white-space: nowrap;
+}
+
 .contact-map {
 	width: 100%;
 	max-width: 800px;
