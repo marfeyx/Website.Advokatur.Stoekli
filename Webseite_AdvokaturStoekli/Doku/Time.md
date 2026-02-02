@@ -22,3 +22,6 @@ Sonntag 01.02.2026          -> 60 Minuten
 Map, Emails, Small changes.
 Fixxed Footer and Texts.
 Changed Datenschutz text.
+
+Dienstag 03.02.2026         -> 20 Minuten
+Über uns Seite
