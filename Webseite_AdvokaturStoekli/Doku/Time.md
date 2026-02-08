@@ -25,3 +25,6 @@ Changed Datenschutz text.
 
 Dienstag 03.02.2026         -> 20 Minuten
 Über uns Seite
+
+Sonntag 08.02.2026          -> 1 Stunde
+Live Überarbeitung
