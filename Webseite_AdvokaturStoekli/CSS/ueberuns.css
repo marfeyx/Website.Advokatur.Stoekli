@@ -468,8 +468,8 @@ h1 {
 .about-header__email {
 	display: inline-block;
 	margin-top: 8px;
-	font-size: 0.82rem;
-	letter-spacing: 0.04rem;
+	font-size: 0.75rem;
+	letter-spacing: 0.02rem;
 	color: #111111;
 	text-decoration: none;
 	border-bottom: 1px solid rgba(17, 17, 17, 0.35);
@@ -543,9 +543,10 @@ h1 {
 .about-werdegang__title {
 	margin: 0;
 	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 1.25rem;
-	letter-spacing: 0.05rem;
-	color: #101010;
+	font-size: 0.95rem;
+	letter-spacing: 0.4rem;
+	text-transform: uppercase;
+	color: #1c1c1c;
 }
 
 .about-leadin {
@@ -572,7 +573,7 @@ h1 {
 .about-focus-list li {
 	position: relative;
 	padding-left: 24px;
-	margin-bottom: 8px;
+	margin-bottom: 2px;
 	font-size: 0.95rem;
 	letter-spacing: 0.05rem;
 }
@@ -594,7 +595,7 @@ h1 {
 .about-mini-headings {
 	display: flex;
 	flex-direction: column;
-	gap: 18px;
+	gap: 8px;
 	margin-top: 32px;
 }
 
@@ -651,10 +652,10 @@ h1 {
 }
 
 .about-mini-heading__text {
-	margin: 0;
+	margin: 0 0 2px 0;
 	font-size: 0.98rem;
 	letter-spacing: 0.02rem;
-	line-height: 1.7;
+	line-height: 1.3;
 }
 
 @media (max-width: 640px) {
