@@ -1,9 +1,4 @@
-strichli weg tätigkeitsschwerpunkte
-abstände richtig
-impressum Bottom margin chliner
 impressum kontakt weiter links
-text über map weniger abstand
-inhaltverzeichniss weiter oben
 "-" weg aus Datenschutz
 
 zweite zeile weiter hinten anfangen

@@ -456,6 +456,10 @@ h1 {
 	margin-bottom: 0;
 }
 
+.contact-layout > p {
+	margin: 0 0 10px;
+}
+
 .contact-layout__line {
 	text-transform: uppercase;
 	letter-spacing: 0.18rem;
@@ -472,7 +476,7 @@ h1 {
 .contact-map {
 	width: 100%;
 	max-width: 800px;
-	margin: 20px auto 36px;
+	margin: 10px auto 36px;
 }
 
 .contact-map__frame {
