@@ -31,3 +31,5 @@ Live Überarbeitung
 
 Montag 09.02.2026           > 20 Minuten
 Patches der Besprechung
+
+15 minues
