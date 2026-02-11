@@ -660,6 +660,18 @@ h1 {
 }
 
 .about-mini-heading p:not(.about-mini-heading__label) {
+	position: relative;
+	padding-left: 1.1rem;
+}
+
+.about-mini-heading p:not(.about-mini-heading__label)::before {
+	content: "–";
+	position: absolute;
+	left: 0;
+	top: 0.08em;
+}
+
+.about-mini-heading p:not(.about-mini-heading__label) {
 	margin: 0 0 4px 0;
 }
 

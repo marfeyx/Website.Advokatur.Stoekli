@@ -29,7 +29,8 @@ Dienstag 03.02.2026         -> 20 Minuten
 Sonntag 08.02.2026          -> 1 Stunde
 Live Überarbeitung
 
-Montag 09.02.2026           > 20 Minuten
+Montag 09.02.2026           -> 20 Minuten
 Patches der Besprechung
 
-15 minues
+Mittwoch 11.02.2026         -> 20 Minuten
+Finale Patches
